@@ -4,6 +4,7 @@ import urllib.request as urllib2
 from bs4 import BeautifulSoup
 
 BASE_URL = 'https://downloads.khinsider.com'
+FILE_FORMAT   = 'mp3'
 
 def validate_url(url):
     if '//downloads.khinsider.com/game-soundtracks/album/' not in url:
@@ -65,7 +66,7 @@ def fetch_from_url(url):
         if mp3_url not in downloaded_mp3s:
             downloaded_mp3s[mp3_url] = True
             parts = mp3_url.split('/')
-            file_name = song_name + '.mp3'
+            file_name = song_name + '.' + FILE_FORMAT
 
             mp3file = urllib2.urlopen(mp3_url)
 

@@ -13,6 +13,9 @@ The only thing you need to install is python3: https://www.python.org/downloads/
 
 ### inputs.txt
 
+#### Select file format
+`FILE_FORMAT` variable defines the format to use, assuming it's available on the site. MP3 by default.
+
 #### Define inputs
 Update the `inputs.txt` in the repo with a list of links, one link per line. 
 

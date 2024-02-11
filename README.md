@@ -4,17 +4,12 @@ Forked from -> https://github.com/trash/khinsider-mp3-downloader
 
 A script to crawl `http://downloads.khinsider.com/` for game soundtracks and download them. Downloads will be placed inside a `/downloads` directory inside the repo. Individual directories for each album will be generated automatically off the url name.
 
-* Supports batch downloading of MP3, FLAC and any other file format
-
 ## Install
 The only thing you need to install is python3: https://www.python.org/downloads/
 
 ## How To Use
 
 ### inputs.txt
-
-#### Select file format
-`FILE_FORMAT` variable defines the format to use, assuming it's available on the site. MP3 by default.
 
 #### Define inputs
 Update the `inputs.txt` in the repo with a list of links, one link per line. 
